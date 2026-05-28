@@ -1,0 +1,57 @@
+name: Weekly CV Papers
+
+on:
+  schedule:
+    - cron: "0 1 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Generate cover
+        run: python scripts/generate_cover.py
+
+      - name: Fetch arXiv papers
+        id: fetch
+        run: python scripts/fetch_arxiv.py
+
+      - name: Commit generated Markdown
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update weekly CV papers"
+          file_pattern: outputs/*.md images/cover.png
+
+      - name: Prepare wxpost config
+        if: ${{ secrets.WXPOST_ENV_JSON != '' }}
+        run: |
+          mkdir -p ~/.@rongyan
+          printf '%s' '${{ secrets.WXPOST_ENV_JSON }}' > ~/.@rongyan/env-cli.json
+
+      - name: Create WeChat draft
+        if: ${{ secrets.WXPOST_ENV_JSON != '' }}
+        id: wxdraft
+        run: npx @rongyan/wxpost-cli@latest add_draft "${{ steps.fetch.outputs.markdown_path }}" | tee wxpost-result.txt
+
+      - name: Publish WeChat draft
+        if: ${{ secrets.WXPOST_ENV_JSON != '' && secrets.WXPOST_AUTO_PUBLISH == 'true' }}
+        shell: bash
+        run: |
+          MEDIA_ID="$(grep -Eo 'media_id[:= ]+[A-Za-z0-9_-]+' wxpost-result.txt | tail -1 | awk '{print $NF}')"
+          if [ -z "$MEDIA_ID" ]; then
+            echo "Cannot find media_id from wxpost output."
+            cat wxpost-result.txt
+            exit 1
+          fi
+          npx @rongyan/wxpost-cli@latest publish "$MEDIA_ID"

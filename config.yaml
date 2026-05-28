@@ -1,0 +1,39 @@
+max_results: 30
+lookback_days: 8
+timezone: Asia/Shanghai
+output_dir: outputs
+article_title: 本周底层视觉与视频处理论文速览
+article_author: AI论文助手
+article_digest: 每周自动抓取 arXiv 计算机视觉方向论文，筛选底层视觉与视频处理相关工作，并汇总摘要、链接与关键词。
+cover: ../images/cover.png
+
+keywords:
+  底层视觉:
+    filters:
+      - image restoration
+      - image super-resolution
+      - super resolution
+      - image denoising
+      - denoising
+      - deblurring
+      - motion deblur
+      - low-light enhancement
+      - low-level vision
+      - image enhancement
+      - image compression
+      - image quality assessment
+  视频处理:
+    filters:
+      - video restoration
+      - video super-resolution
+      - video denoising
+      - video deblurring
+      - video compression
+      - video interpolation
+      - frame interpolation
+      - video enhancement
+      - video quality assessment
+  顶会论文:
+    filters:
+      - CVPR 2026
+      - CVPR
