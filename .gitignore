@@ -1,2 +1,6 @@
 __pycache__/
 *.py[cod]
+node_modules/
+.npm-cache/
+.npm-cache-wxpost/
+package-lock.json

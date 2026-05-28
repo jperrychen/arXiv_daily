@@ -229,6 +229,19 @@ def markdown_escape(value: str) -> str:
     return value.replace("|", "\\|")
 
 
+def strip_urls(value: str) -> str:
+    return re.sub(r"https?://\S+", "", value)
+
+
+def short_summary(value: str, limit: int = 520) -> str:
+    value = strip_urls(value)
+    value = value.replace("\\%", "%")
+    value = re.sub(r"\s+", " ", value).strip()
+    if len(value) <= limit:
+        return value
+    return value[:limit].rstrip() + "..."
+
+
 def render_markdown(papers: list[Paper], config: dict, now: dt.datetime, output_name: str) -> str:
     title = config.get("article_title", "本周底层视觉与视频处理论文速览")
     author = config.get("article_author", "AI论文助手")
@@ -264,12 +277,9 @@ def render_markdown(papers: list[Paper], config: dict, now: dt.datetime, output_
         return "\n".join(lines)
 
     lines.extend(["## 快速列表", ""])
-    lines.extend(["| # | 方向 | 标题 | 日期 |", "|---|---|---|---|"])
     for index, paper in enumerate(papers, start=1):
         groups = "、".join(paper.groups)
-        lines.append(
-            f"| {index} | {markdown_escape(groups)} | [{markdown_escape(paper.title)}](#{index}) | {paper.published.date().isoformat()} |"
-        )
+        lines.append(f"{index}. {groups}｜{paper.title}｜{paper.published.date().isoformat()}")
 
     lines.append("")
     lines.append("## 论文摘要")
@@ -286,11 +296,11 @@ def render_markdown(papers: list[Paper], config: dict, now: dt.datetime, output_
                 f"- 日期：{paper.published.date().isoformat()}",
                 f"- 分类：{', '.join(paper.categories)}",
                 f"- 关键词：{keywords}",
-                f"- 链接：[Abstract]({paper.link}) / [PDF]({paper.pdf})",
+                f"- arXiv：{paper.link.rsplit('/', 1)[-1]}",
                 "",
                 "摘要：",
                 "",
-                f"> {paper.summary}",
+                short_summary(paper.summary),
                 "",
             ]
         )
