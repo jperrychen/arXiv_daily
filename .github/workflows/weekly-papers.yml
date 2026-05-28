@@ -11,6 +11,9 @@ permissions:
 jobs:
   fetch-and-publish:
     runs-on: ubuntu-latest
+    env:
+      WXPOST_ENV_JSON: ${{ secrets.WXPOST_ENV_JSON }}
+      WXPOST_AUTO_PUBLISH: ${{ secrets.WXPOST_AUTO_PUBLISH }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -34,18 +37,18 @@ jobs:
           file_pattern: outputs/*.md images/cover.png
 
       - name: Prepare wxpost config
-        if: ${{ secrets.WXPOST_ENV_JSON != '' }}
+        if: ${{ env.WXPOST_ENV_JSON != '' }}
         run: |
           mkdir -p ~/.@rongyan
-          printf '%s' '${{ secrets.WXPOST_ENV_JSON }}' > ~/.@rongyan/env-cli.json
+          printf '%s' "$WXPOST_ENV_JSON" > ~/.@rongyan/env-cli.json
 
       - name: Create WeChat draft
-        if: ${{ secrets.WXPOST_ENV_JSON != '' }}
+        if: ${{ env.WXPOST_ENV_JSON != '' }}
         id: wxdraft
         run: npx @rongyan/wxpost-cli@latest add_draft "${{ steps.fetch.outputs.markdown_path }}" | tee wxpost-result.txt
 
       - name: Publish WeChat draft
-        if: ${{ secrets.WXPOST_ENV_JSON != '' && secrets.WXPOST_AUTO_PUBLISH == 'true' }}
+        if: ${{ env.WXPOST_ENV_JSON != '' && env.WXPOST_AUTO_PUBLISH == 'true' }}
         shell: bash
         run: |
           MEDIA_ID="$(grep -Eo 'media_id[:= ]+[A-Za-z0-9_-]+' wxpost-result.txt | tail -1 | awk '{print $NF}')"
