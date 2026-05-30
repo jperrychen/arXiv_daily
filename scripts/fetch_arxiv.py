@@ -242,12 +242,17 @@ def short_summary(value: str, limit: int = 520) -> str:
     return value[:limit].rstrip() + "..."
 
 
+def article_title_with_date(config: dict, date_text: str) -> str:
+    title = config.get("article_title", "底层视觉与视频论文速览")
+    return f"{date_text}｜{title}"
+
+
 def render_markdown(papers: list[Paper], config: dict, now: dt.datetime, output_name: str) -> str:
-    title = config.get("article_title", "本周底层视觉与视频处理论文速览")
     author = config.get("article_author", "AI论文助手")
     digest = config.get("article_digest", "每周自动筛选底层视觉与视频处理方向论文，汇总摘要、关键词与论文链接。")
     cover = config.get("cover", "./images/cover.jpg")
     date_text = now.strftime("%Y-%m-%d")
+    title = article_title_with_date(config, date_text)
 
     lines = [
         "---",

@@ -2,7 +2,7 @@ max_results: 30
 lookback_days: 8
 timezone: Asia/Shanghai
 output_dir: outputs
-article_title: 本周底层视觉与视频处理论文速览
+article_title: 底层视觉与视频论文速览
 article_author: AI论文助手
 article_digest: 每周自动抓取 arXiv 计算机视觉方向论文，筛选底层视觉与视频处理相关工作，并汇总摘要、链接与关键词。
 cover: ../images/cover.png

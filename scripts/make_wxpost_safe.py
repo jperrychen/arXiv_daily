@@ -7,6 +7,7 @@ from pathlib import Path
 
 FRONT_MATTER_RE = re.compile(r"\A(---\n.*?\n---\n)", re.S)
 PAPER_RE = re.compile(r"^###\s+\d+\.\s+(.+)$", re.M)
+DEFAULT_BASE_TITLE = "底层视觉与视频论文速览"
 
 
 def strip_markdown_link(value: str) -> str:
@@ -51,6 +52,20 @@ def arxiv_id(link_line: str) -> str:
     return match.group(1) if match else "见 arXiv"
 
 
+def title_for_date(date_text: str) -> str:
+    if date_text:
+        return f"{date_text}｜{DEFAULT_BASE_TITLE}"
+    return DEFAULT_BASE_TITLE
+
+
+def update_front_matter_title(front_matter: str, title: str) -> str:
+    if not front_matter:
+        return f"---\ntitle: {title}\n---\n"
+    if re.search(r"^title:\s*.*$", front_matter, re.M):
+        return re.sub(r"^title:\s*.*$", f"title: {title}", front_matter, count=1, flags=re.M)
+    return front_matter.replace("---\n", f"---\ntitle: {title}\n", 1)
+
+
 def render_safe(markdown: str, max_papers: int) -> str:
     front = FRONT_MATTER_RE.search(markdown)
     front_matter = front.group(1) if front else ""
@@ -59,11 +74,13 @@ def render_safe(markdown: str, max_papers: int) -> str:
 
     date_match = re.search(r"生成时间：(.+)", body)
     date_text = date_match.group(1).strip() if date_match else ""
+    title = title_for_date(date_text)
+    front_matter = update_front_matter_title(front_matter, title)
 
     lines = [
         front_matter.rstrip(),
         "",
-        "# 本周底层视觉与视频处理论文速览",
+        f"# {title}",
         "",
     ]
     if date_text:
