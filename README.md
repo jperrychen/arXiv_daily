@@ -33,10 +33,10 @@ python scripts/generate_cover.py
 
 工作流文件：`.github/workflows/weekly-papers.yml`
 
-默认计划为北京时间每周一 09:00 运行，对应 GitHub Actions cron：
+默认计划为北京时间每周日 12:00 运行，对应 GitHub Actions cron：
 
 ```text
-0 1 * * 1
+0 4 * * 0
 ```
 
 也可以在 GitHub 仓库的 Actions 页面手动触发 `Weekly CV Papers`。
