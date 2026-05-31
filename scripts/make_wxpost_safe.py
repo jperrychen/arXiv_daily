@@ -32,7 +32,7 @@ def parse_papers(body: str) -> list[dict[str, str]]:
         end = matches[index + 1].start() if index + 1 < len(matches) else len(body)
         block = body[start:end]
         paper: dict[str, str] = {"title": strip_markdown_link(match.group(1)).strip()}
-        for key in ["方向", "作者", "日期", "分类", "关键词", "链接"]:
+        for key in ["方向", "作者", "日期", "分类", "关键词", "链接", "arXiv"]:
             item = re.search(rf"^-\s+{key}：(.+)$", block, re.M)
             if item:
                 raw_value = item.group(1).strip()
@@ -40,7 +40,7 @@ def parse_papers(body: str) -> list[dict[str, str]]:
                     paper[key] = raw_value
                 else:
                     paper[key] = strip_markdown_link(raw_value).strip()
-        summary = re.search(r"摘要：\s*\n\s*\n>\s*(.+?)(?=\n\n|\Z)", block, re.S)
+        summary = re.search(r"摘要：\s*\n\s*\n>?\s*(.+?)(?=\n\n###|\n\n##|\Z)", block, re.S)
         if summary:
             paper["摘要"] = clean_summary(summary.group(1), 520)
         papers.append(paper)
@@ -105,7 +105,7 @@ def render_safe(markdown: str, max_papers: int) -> str:
                 f"- 作者：{paper.get('作者', '')}",
                 f"- 日期：{paper.get('日期', '')}",
                 f"- 关键词：{paper.get('关键词', '')}",
-                f"- arXiv：{arxiv_id(paper.get('链接', ''))}",
+                f"- arXiv：{arxiv_id(paper.get('链接') or paper.get('arXiv', ''))}",
                 "",
                 "摘要：",
                 "",
