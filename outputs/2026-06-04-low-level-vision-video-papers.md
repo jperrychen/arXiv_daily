@@ -426,4 +426,4 @@ We propose Decoupled Residual Denoising Diffusion models (DRDD) for unified and 
 
 本期筛选来自仓库 `config.yaml`。如果希望增加方向，可以在 `keywords` 下新增分组和 `filters`。
 
-Markdown 文件：`latest.md`
+Markdown 文件：`2026-06-04-low-level-vision-video-papers.md`
