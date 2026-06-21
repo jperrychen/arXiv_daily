@@ -440,4 +440,4 @@ Interferometric Synthetic Aperture Radar (InSAR) enables effective monitoring of
 
 本期筛选来自仓库 `config.yaml`。如果希望增加方向，可以在 `keywords` 下新增分组和 `filters`。
 
-Markdown 文件：`latest.md`
+Markdown 文件：`2026-06-21-low-level-vision-video-papers.md`
