@@ -1,440 +1,440 @@
 ---
-title: 2026-10-25｜底层视觉与视频论文速览
+title: 2026-11-01｜底层视觉与视频论文速览
 author: AI论文助手
 digest: 每周自动抓取 arXiv 计算机视觉方向论文，筛选底层视觉与视频处理相关工作，并汇总摘要、链接与关键词。
 cover: ../images/cover.png
 ---
 
-# 2026-10-25｜底层视觉与视频论文速览
+# 2026-11-01｜底层视觉与视频论文速览
 
-生成时间：2026-10-25
+生成时间：2026-11-01
 
 本期从 arXiv cs.CV 最新论文中按关键词筛选，覆盖底层视觉、视频处理相关方向。共收录 30 篇，排序优先考虑关键词命中数量，其次参考提交时间。
 
 ## 快速列表
 
-1. 底层视觉｜HP-PnP-Flow: Hybrid Time Scheduling and Projection for Plug-and-Play Image Restoration via Flow Matching｜2026-10-19
-2. 底层视觉｜GLOW-FM: Efficient Generative Low-Light Image Enhancement with One-Step Latent Flow Matching｜2026-10-22
-3. 底层视觉、视频处理｜ResGVC: Residual Coding for High-fidelity Generative Video Compression｜2026-10-22
-4. 底层视觉｜WaFIR: Wavelet-Fourier Mixture-of-Experts with Subband-Adaptive Routing for Blind All-in-One Image Restoration｜2026-10-21
-5. 底层视觉｜Diffusion Posterior Sampling with Uncertain Forward Models｜2026-10-21
-6. 底层视觉｜GigaBench: Benchmarking Learnable Representations for Gigapixel Image Compression and Super-Resolution｜2026-10-22
-7. 底层视觉｜WorldForge V2: Eliciting Camera-Trajectory Alignment in Video Diffusion Models｜2026-10-22
-8. 底层视觉｜Self-Supervised Multibeam Sonar Restoration via Coherent Forward Modeling｜2026-10-22
-9. 底层视觉｜I$^2$-KAN: Interpretable Intra- and Inter-Modal Multi-Pathway Representation Learning for Multimodal Sentiment Analysis｜2026-10-22
-10. 底层视觉｜GraphCAD: Geometry-Aware Diffusion on Edge-Adjacency Graphs for CAD Generation｜2026-10-22
-11. 底层视觉｜Bound-Conditioned Latent Inference for Progressive Image Compression｜2026-10-22
-12. 底层视觉｜CAVC: Convergence-Adaptive Audio-Visual Cache for Modality-Asymmetric Diffusion Generation｜2026-10-22
-13. 底层视觉｜DeXplicit: Making Physical State Explicit in Dexterous Manipulation World Models｜2026-10-22
-14. 底层视觉｜Self-Distilling Future Video Representations for World Action Models｜2026-10-21
-15. 底层视觉｜Looking Ahead: Modeling Future Evolution in Autoregressive Video Generation｜2026-10-21
-16. 底层视觉｜Training-free Acceleration for Blind Compressed Image Restoration via Activation-Calibrated Singular Value Decomposition｜2026-10-21
-17. 底层视觉｜CausalAlign: Causal Alignment of Video Generation Models for Consistent Ego-Motion｜2026-10-21
-18. 底层视觉｜How Do DiTs Denoise? An Aggregator-Predictor View of Attention and MLPs｜2026-10-21
-19. 底层视觉｜Efficient Generative Image Compression with Quantized Latents Refinement｜2026-10-21
-20. 底层视觉｜Spatially Gated Demographic Steering for Debiasing Multi-Person Text-to-Image Generation｜2026-10-21
-21. 底层视觉｜Rethinking Underwater Image Enhancement: Learning through Text-Guided Degradation Curriculum｜2026-10-21
-22. 底层视觉｜Sparsity Should Be ALLOTted by Output: Training-Free Allocation of Block-Sparse Attention for Video Diffusion Transformers｜2026-10-21
-23. 底层视觉｜Seeing through Denoising: Frequency-guided One-step Denoising for Infrared Small Target Detection｜2026-10-21
-24. 底层视觉｜OpenMAP-HIE: Pathology Informed Score-based Diffusion Model for Unsupervised Neonatal Hypoxic-Ischemic Encephalopathy Lesion Segmentation｜2026-10-21
-25. 底层视觉｜OccJEPA: Occlusion as Masking for Amodal Video Segmentation｜2026-10-21
-26. 底层视觉｜Policy-Mask: Budget-Aware Adaptation of Diffusion Features to Discriminative Tasks｜2026-10-20
-27. 底层视觉｜JUICE: Unified Multimodal Modeling in Pretrained Representation Spaces｜2026-10-20
-28. 底层视觉｜SolarRenderer: Few-Step Generative Reference Rendering｜2026-10-20
-29. 底层视觉｜WorldSR: Harnessing World Knowledge Search for Grounded Image Super-Resolution｜2026-10-20
-30. 底层视觉｜Unified RAW Image Exposure Correction and Restoration via Linear Illumination and Frequency-Adaptive Enhancement｜2026-10-20
+1. 底层视觉、视频处理｜Blind Video Denoising for Vocal Tract rtMRI using a Self-Supervised Ensemble｜2026-10-29
+2. 底层视觉｜What Does LOL Measure? Hidden Label Shifts in Low-Light Enhancement Benchmarks｜2026-10-28
+3. 底层视觉｜Image Modeling: From Handcrafted Priors to Foundation Image Models｜2026-10-27
+4. 底层视觉｜HiFOR: Hierarchical Foresight with Action-Guided World Grounding for Vision-Language-Action Model｜2026-10-29
+5. 底层视觉｜SCOPE: Semantic COdec Pre-Editing for Object-Preserving Compression｜2026-10-29
+6. 底层视觉｜MorphSIG: Subject-Driven Image Generation via Decoupled Anchoring and Feature Transport｜2026-10-29
+7. 底层视觉｜FFAI: Flow Matching with Feedback Training and Adaptive Initialization for CT Reconstruction｜2026-10-29
+8. 底层视觉｜Regional Anchor Routing for Multi-Object Motion Transfer｜2026-10-29
+9. 底层视觉｜Calibrating Attention-Based Token Pruning for Efficient Multi-Image Synthesis in UMMs｜2026-10-29
+10. 底层视觉｜Multi-level Constrained Learning for Underwater Image Enhancement｜2026-10-29
+11. 底层视觉｜CLaW: Codec-Guided Adaptive Latent Watermarking for Traceable Diffusion Image Generation｜2026-10-29
+12. 视频处理｜AlbumVSR: Identity-Preserving Face Video Super-Resolution from a Personal Photo Album｜2026-10-28
+13. 视频处理｜Residual Motion Splatting for Continuous Space-Time Video Super-Resolution｜2026-10-28
+14. 底层视觉｜Hierarchical Diffusion for Camera-controlled Autoregressive Video Generation｜2026-10-27
+15. 底层视觉｜The Noise Plane: A Diffusion Bridge Across Exponent and Dispersion｜2026-10-27
+16. 视频处理｜Taming Noise Initialization for Zero-shot Video Restoration with Image Diffusion Priors｜2026-10-27
+17. 底层视觉｜VGIQA: Fine-Grained Image Quality Assessment with Visual Grounding Rewards｜2026-10-27
+18. 底层视觉｜A First-Step Bias Restores Lost Diversity in Diffusion Model Distillation｜2026-10-27
+19. 底层视觉｜TriDifNet: A Unified Three-Task Diffusion Network for End-to-End RGB-T Perception｜2026-10-27
+20. 视频处理｜Explicit Regional Representations For Video Quality Assessment｜2026-10-27
+21. 底层视觉｜Look Only When Needed: Certificate-Guided Visual Routing for Efficient Diffusion VLMs｜2026-10-27
+22. 底层视觉｜Spatial-Frequency Learning for Scanning Transmission Electron Microscopy Image Enhancement｜2026-10-27
+23. 底层视觉｜OSWAM: An Effective World Action Model with One-Step Action Generation｜2026-10-26
+24. 底层视觉｜HiFiPix: Bringing High-Fidelity Real-World Super-Resolution Back to Pixel Space｜2026-10-26
+25. 底层视觉｜Shared-Factor-Conditioned Diffusion for Low-Rank Tensor Recovery｜2026-10-26
+26. 底层视觉｜Low-rank MERA Decomposition of 3D OCT Image Volume for Compression, Denoising, Feature Extraction and Diagnosis of Retinal Diseases｜2026-10-26
+27. 视频处理｜Learning Dual-Camera Smooth Zoom via Decoupled Geometric-Photometric Data Synthesis｜2026-10-26
+28. 底层视觉｜PosePlaner: Denoising Any Feed-Forward Pose Predictor from Pairwise Planar Geometry｜2026-10-26
+29. 底层视觉｜ToDoPro: Faster and Better Reference-Based Generation: Early Token Reduction via Downsampled Self-Probing｜2026-10-26
+30. 底层视觉｜EditDistill: Is It Possible to Guide Video Editing with Image Editing?｜2026-10-25
 
 ## 论文摘要
 
-### 1. HP-PnP-Flow: Hybrid Time Scheduling and Projection for Plug-and-Play Image Restoration via Flow Matching
-
-- 方向：底层视觉
-- 作者：Yong Li, Xiaojie Wang, Xiaoyan Zhang
-- 日期：2026-10-19
-- 分类：cs.CV
-- 关键词：image restoration、denoising、deblurring
-- arXiv：2610.26183v1
-
-摘要：
-
-Image restoration is a fundamental inverse problem that seeks to recover high-quality images from degraded observations. Plug-and-Play (PnP) methods provide a flexible framework for integrating pretrained denoisers into iterative reconstruction, whereas flow matching offers an efficient generative modeling approach based on continuous-time ODE dynamics. Very recently, Martin et al.\ (ICLR, 2025) developed a PnP-Flow method, which integrates the PnP framework with flow matching through a time-dependent denoiser cons...
-
-### 2. GLOW-FM: Efficient Generative Low-Light Image Enhancement with One-Step Latent Flow Matching
-
-- 方向：底层视觉
-- 作者：Ariel Lapid, Yuval Haitman, Reuven Peretz, Arnon Netzer, Idit Diamant
-- 日期：2026-10-22
-- 分类：cs.CV
-- 关键词：image restoration、image enhancement
-- arXiv：2610.31222v1
-
-摘要：
-
-Low-light image enhancement (LLIE) aims to recover well-exposed and perceptually faithful images from severely degraded observations. Recent diffusion-based generative methods achieve strong perceptual quality by leveraging powerful image priors, but their iterative sampling incurs substantial computational cost, limiting practical deployment. Despite recent efficiency gains in generative LLIE, high-quality enhancement with a single function evaluation and low overall computation remains challenging, particularly u...
-
-### 3. ResGVC: Residual Coding for High-fidelity Generative Video Compression
+### 1. Blind Video Denoising for Vocal Tract rtMRI using a Self-Supervised Ensemble
 
 - 方向：底层视觉、视频处理
-- 作者：Ding Ding, Daowen Li, Ying Chen, Kai Li
-- 日期：2026-10-22
-- 分类：cs.CV
-- 关键词：denoising、video compression
-- arXiv：2610.31039v1
-
-摘要：
-
-Generative video compression (GVC) methods usually employ decoder-side diffusion models to denoise reconstructed signals based on generative priors. Besides, most of these methods perform denoising in latent space rather than directly in pixel domain. In this paper, we propose ResGVC, a residual coding framework for GVC that guides denoising toward original pictures by transmitting residual signals. ResGVC first encodes the original pictures within a learned video codec, and then decomposes the distortion between t...
-
-### 4. WaFIR: Wavelet-Fourier Mixture-of-Experts with Subband-Adaptive Routing for Blind All-in-One Image Restoration
-
-- 方向：底层视觉
-- 作者：Trong Nhan Nguyen, Vu Hoang Minh Doan, Thanh Dat Le, Truong Tien Vo, Thi Thu Ha Vu, Tan Hung Vo, et al.
-- 日期：2026-10-21
-- 分类：cs.CV
-- 关键词：image restoration、denoising
-- arXiv：2610.29108v1
-
-摘要：
-
-Blind all-in-one image restoration must adapt a shared model to heterogeneous and sometimes mixed degradations without a task label at test time. We introduce WaFIR, a decoder module that decomposes features into Haar subbands, summarizes each subband with a compact Fourier descriptor, and routes it to prompt-conditioned spectral modulation experts. Unlike image-level frequency conditioning, WaFIR makes routing decisions at the subband level, enabling frequency-specific processing while retaining the task context l...
-
-### 5. Diffusion Posterior Sampling with Uncertain Forward Models
-
-- 方向：底层视觉
-- 作者：Wentao Shangguan, Vivek K Goyal
-- 日期：2026-10-21
-- 分类：cs.CV
-- 关键词：deblurring、motion deblur
-- arXiv：2610.29102v1
-
-摘要：
-
-Diffusion posterior samplers reconstruct signals by combining a pretrained diffusion prior with a measurement likelihood specified by a forward model and a noise model. Calibration and reference data can characterize uncertainty in the forward model's parameters, such as blur kernels or detector responses. Fixing these parameters at estimated values leaves their uncertainty out of the likelihood, and parameter errors are thus absorbed into the reconstruction. We introduce an uncertainty-aware likelihood (UAL), a Ga...
-
-### 6. GigaBench: Benchmarking Learnable Representations for Gigapixel Image Compression and Super-Resolution
-
-- 方向：底层视觉
-- 作者：Matteo Fusconi, Alex Costanzino, Pierluigi Zama Ramirez, Luigi Di Stefano
-- 日期：2026-10-22
-- 分类：cs.CV
-- 关键词：image compression
-- arXiv：2610.31644v1
-
-摘要：
-
-Learnable Representations (LRs) can fit parametric families of functions to diverse kinds of signals. These emergent neural-native data formats are gathering interest in the scientific community due to their compactness, resolution-agnosticism and amenability to direct neural processing. On the other hand, gigapixel images are becoming increasingly widespread across a variety of scientific, cultural, and industrial domains. In this paper, we present GigaBench, the first benchmark and experimental evaluation focused...
-
-### 7. WorldForge V2: Eliciting Camera-Trajectory Alignment in Video Diffusion Models
-
-- 方向：底层视觉
-- 作者：Chenxi Song, Yanming Yang, Tong Zhao, Ruibo Li, Joey Tianyi Zhou, Chi Zhang
-- 日期：2026-10-22
-- 分类：cs.CV
-- 关键词：denoising
-- arXiv：2610.31640v1
-
-摘要：
-
-Video diffusion models have learned rich 3D/4D priors, making them promising for scene generation and video re-rendering. However, their use in spatial tasks is limited by imprecise camera control, spatial and temporal inconsistencies, and entangled camera motion with scene dynamics. Existing approaches, such as task-specific fine-tuning and post-process warping, often introduce visual artifacts, generalize poorly, or incur high computational costs. We propose WorldForge V2 to achieve accurate camera control while...
-
-### 8. Self-Supervised Multibeam Sonar Restoration via Coherent Forward Modeling
-
-- 方向：底层视觉
-- 作者：Zixin Wang, James Hopgood, Mike Davies
-- 日期：2026-10-22
-- 分类：eess.IV, cs.CV, eess.SP
-- 关键词：deblurring
-- arXiv：2610.31490v1
-
-摘要：
-
-Multibeam imaging sonar produces intensity images degraded by coherent speckle and system-induced blur, while clean reflectivity targets are rarely available. Existing despeckling methods often rely on simplified intensity-domain noise models, synthetic clean targets, or blind-spot self-supervision, and typically do not jointly model deblurring and speckle suppression. We propose a physics-consistent self-supervised framework for joint despeckling and deblurring of multibeam imaging sonar. A stochastic coherent ima...
-
-### 9. I$^2$-KAN: Interpretable Intra- and Inter-Modal Multi-Pathway Representation Learning for Multimodal Sentiment Analysis
-
-- 方向：底层视觉
-- 作者：Xiaoting Xie, Feng Qiao, Xianwei Zhang, Hailong Chen, Kaiwen Zheng, Joemon M. Jose, et al.
-- 日期：2026-10-22
-- 分类：cs.CV
-- 关键词：denoising
-- arXiv：2610.31087v1
-
-摘要：
-
-Multimodal sentiment analysis (MSA) aims to infer sentiment by integrating linguistic, acoustic, and visual information. However, many fusion methods integrate modality-specific representations and cross-modal interactions into joint representations, making it difficult to determine whether predictive utility arises from a modality itself or from its interactions with others. More fundamentally, a modality's standalone predictive utility may not faithfully reflect its interaction-conditioned predictive utility. To...
-
-### 10. GraphCAD: Geometry-Aware Diffusion on Edge-Adjacency Graphs for CAD Generation
-
-- 方向：底层视觉
-- 作者：Wenhao Zheng, Xianggen Liu, Li Yue, Jiancheng Shi, Jiancheng Lv
-- 日期：2026-10-22
-- 分类：cs.CV
-- 关键词：denoising
-- arXiv：2610.30974v1
-
-摘要：
-
-Generative modeling for Computer-Aided Design (CAD) remains fundamentally challenged by the need to capture the intricate interplay between discrete topological connectivity and precise spatial geometry inherent in Boundary Representations (B-reps). Existing generative approaches largely formulate CAD construction as a sequence modeling problem, but consequently lack an explicit topological inductive bias. In this work, we present GraphCAD, a geometry-aware generative framework that centers modeling on the Edge-Adj...
-
-### 11. Bound-Conditioned Latent Inference for Progressive Image Compression
-
-- 方向：底层视觉
-- 作者：Jaeseok Jang, Seungmin Jeon, Kwang Pyo Choi, Chang-Su Kim
-- 日期：2026-10-22
+- 作者：Julian Andres Hernandez-Potes, Tomás Arias-Vergara, Daiqi Liu, Andreas Maier, Paula Andrea Perez-Toro
+- 日期：2026-10-29
 - 分类：eess.IV, cs.CV
+- 关键词：denoising、video denoising
+- arXiv：2610.39972v1
+
+摘要：
+
+Real-time magnetic resonance imaging of the vocal tract makes speech articulation directly observable, but the trade-off between temporal resolution and signal quality introduces substantial noise and obscures fine articulatory detail. Since clean references cannot be acquired for a moving vocal tract, supervised denoising approaches are not applicable in this setting. We propose a self-supervised denoising framework that combines spatiotemporal super-resolution learning with pseudo-supervision derived from a varia...
+
+### 2. What Does LOL Measure? Hidden Label Shifts in Low-Light Enhancement Benchmarks
+
+- 方向：底层视觉
+- 作者：Adityan Thirumani Srinivasan
+- 日期：2026-10-28
+- 分类：cs.CV, cs.LG, eess.IV
+- 关键词：low-light enhancement、image enhancement
+- arXiv：2610.38121v1
+
+摘要：
+
+LOL-v1 and LOLv2-Real are the standard benchmarks for supervised low-light image enhancement, and several leading methods ship hand-set test-time adjustments with their evaluation scripts. We audit both benchmarks with 18 public checkpoints of eight methods under one metric implementation that reproduces every published number to within 0.09 dB, and find that their test labels differ from their training labels. (i) The 15 LOL-v1 test labels are rendered differently: the same captures appear in LOLv2 with labels of...
+
+### 3. Image Modeling: From Handcrafted Priors to Foundation Image Models
+
+- 方向：底层视觉
+- 作者：A. Murat Tekalp
+- 日期：2026-10-27
+- 分类：eess.IV, cs.CV
+- 关键词：image restoration、denoising
+- arXiv：2610.36646v1
+
+摘要：
+
+This paper unifies six decades of image modeling, evolving from handcrafted mathematical tractable priors to solve inverse problems in imaging to data-driven deep foundation image models for both image generation and solving inverse problems, under a common Bayesian framework that formulates image modeling as an implicit or explicit probabilistic characterization of a data manifold. Every image restoration or generative task fundamentally seeks to answer the same question: What makes an image look like a real image...
+
+### 4. HiFOR: Hierarchical Foresight with Action-Guided World Grounding for Vision-Language-Action Model
+
+- 方向：底层视觉
+- 作者：Rongxing Ding, Hongyu Qu, Kehong Wu, Xudong Wang, Fan Zhang, Xinguang Xiang, et al.
+- 日期：2026-10-29
+- 分类：cs.CV, cs.RO
+- 关键词：denoising
+- arXiv：2610.40373v1
+
+摘要：
+
+Vision-Language-Action (VLA) models have demonstrated promising capabilities in robotic manipulation by integrating visual perception, language understanding, and action generation. Recent advances have further incorporated future prediction to enhance the understanding of environmental dynamics and task progression. However, existing methods often model short-term dynamics and long-term task objectives separately, while directly incorporating predicted futures into action policies without sufficiently considering...
+
+### 5. SCOPE: Semantic COdec Pre-Editing for Object-Preserving Compression
+
+- 方向：底层视觉
+- 作者：Silvia Dani, Leonardo Galteri, Marco Bertini
+- 日期：2026-10-29
+- 分类：cs.CV
 - 关键词：image compression
-- arXiv：2610.30966v1
+- arXiv：2610.39778v1
 
 摘要：
 
-Progressive image compression reconstructs images from prefixes of a single bitstream and therefore involves sequential latent inference under partial observations. Existing trit-plane codecs mainly treat decoded trits as discrete symbols for probability prediction, without fully exploiting their role as interval constraints on the underlying continuous latents. We propose bound-conditioned latent inference (BLI), a framework that reformulates progressive trit-plane coding as sequential latent inference under shrin...
+Image compression is increasingly used before machine vision systems, yet standard codecs are mainly optimized for human perception rather than downstream task accuracy. We propose SCOPE (Semantic COdec Pre-Editing), a conditional image pre-editor that modifies images before compression to improve the bitrate and detection accuracy trade-off. The model is conditioned on the codec family and compression severity, allowing a single trained network to adapt to multiple compression settings without retraining or loadin...
 
-### 12. CAVC: Convergence-Adaptive Audio-Visual Cache for Modality-Asymmetric Diffusion Generation
-
-- 方向：底层视觉
-- 作者：Lifan Jiang, Yibo Zhao, Senlin cheng, Bolei Xu, Xiaobo Li, Can Ye, et al.
-- 日期：2026-10-22
-- 分类：cs.CV, cs.SD
-- 关键词：denoising
-- arXiv：2610.30854v1
-
-摘要：
-
-Diffusion-based audio-visual generation methods typically perform joint denoising of audio and video latents throughout the entire sampling trajectory, repeatedly executing modality-specific denoising branches and cross-modal attention at every timestep. However, we observe that such uniform joint computation is not always necessary. The key is a modality-asymmetric recoverability: audio-side drift introduced by mid-stage caching can be substantially reduced by only a few terminal joint denoising steps, whereas vid...
-
-### 13. DeXplicit: Making Physical State Explicit in Dexterous Manipulation World Models
+### 6. MorphSIG: Subject-Driven Image Generation via Decoupled Anchoring and Feature Transport
 
 - 方向：底层视觉
-- 作者：Adam Lee, Mutian Xu, Yukang Cao, Shulin Tian, Ziwei Liu
-- 日期：2026-10-22
+- 作者：Hailong Yan, Yongrui Zhang, Xiangtao Zhang, Le Zhang
+- 日期：2026-10-29
 - 分类：cs.CV
 - 关键词：denoising
-- arXiv：2610.30781v1
+- arXiv：2610.39530v1
 
 摘要：
 
-Before acting on an object, a robot needs to anticipate how its hand motion will change the physical world and what the resulting scene will look like. Existing approaches typically entangle action-conditioned dynamics, camera motion, and visual synthesis within a video generation model, or represent dynamics as point trajectories without explicit object structure. We introduce DeXplicit, a dexterous manipulation world model that instead predicts how the world evolves explicitly in metric 3D before rendering its vi...
+We propose MorphSIG, a training-free framework that reformulates subject-driven image generation (SIG) as pseudo-video feature transport. MorphSIG contains two core modules: Progressive Decoupled Anchoring, which uses frequency-domain decoupling and structural scrambling during early denoising to break structural locking and enable a gradual transition from free composition to identity alignment; and Pseudo-flow Guided Feature Transport, which constructs a latent-space pseudo-flow field to mimic Image-to-Video temp...
 
-### 14. Self-Distilling Future Video Representations for World Action Models
-
-- 方向：底层视觉
-- 作者：Huiwon Jang, Suhyeok Jang, Hyeonmo Kang, Seungku Kim, Jinwoo Shin, Sihyun Yu
-- 日期：2026-10-21
-- 分类：cs.RO, cs.CV
-- 关键词：denoising
-- arXiv：2610.30320v1
-
-摘要：
-
-World Action Models (WAMs) have emerged as a promising approach to learning generalist robot policies using rich spatiotemporal priors from pre-trained video diffusion models. A recent line of WAMs improves inference efficiency by conditioning a separate action decoder on intermediate future video representations extracted from a single denoising step, avoiding costly iterative denoising required for video generation. This design makes action prediction depend directly on the quality of these future representations...
-
-### 15. Looking Ahead: Modeling Future Evolution in Autoregressive Video Generation
+### 7. FFAI: Flow Matching with Feedback Training and Adaptive Initialization for CT Reconstruction
 
 - 方向：底层视觉
-- 作者：Ruopeng Gao, Yukun Huang, Jiarui Hu, Shuai Wang, Wenbo Hu, Ying Shan, et al.
-- 日期：2026-10-21
-- 分类：cs.CV
-- 关键词：denoising
-- arXiv：2610.29989v1
-
-摘要：
-
-Autoregressive video diffusion models generate videos chunk by chunk, yet producing plausible continuations does not guarantee that they capture how scenes evolve. Under teacher forcing, strong temporal redundancy may allow local visual continuity to serve as a shortcut for current-chunk denoising, reducing the pressure to model visual evolution. We introduce Future Chunk Prediction (FCP), an auxiliary objective jointly optimized with teacher-forced denoising that predicts temporally separated chunks without access...
-
-### 16. Training-free Acceleration for Blind Compressed Image Restoration via Activation-Calibrated Singular Value Decomposition
-
-- 方向：底层视觉
-- 作者：Suhang Yao, Xin Li, Xijun Wang, Yufei Wang, Yeying Jin, Zhibo Chen
-- 日期：2026-10-21
+- 作者：Jigang Duan, Heran Wang, Genwei Ma, Xing Zhao
+- 日期：2026-10-29
 - 分类：cs.CV
 - 关键词：image restoration
-- arXiv：2610.29959v2
+- arXiv：2610.39517v1
 
 摘要：
 
-Transformer-based models achieve strong performance on blind compressed image restoration (CIR) under unknown compression settings, but their densely stacked projection operators make deployment costly. We study training-free acceleration for such models through an empirical, operator-level analysis. Specifically, we profile where computation is concentrated, characterize channel-wise activation distributions under compressed inputs, and examine the singular-value decay of representative projection weights. These m...
+Although low-dose, sparse-view, and limited-angle CT involve distinct degradation mechanisms, all three pose reconstruction challenges due to limited measurement information and can therefore be addressed within a unified framework. In iterative image restoration with flow matching, prediction errors may cause inference states to deviate from the prescribed training path, while a fixed initialization may be unsuitable for inputs with varying degradation severity. We propose a unified conditional flow matching metho...
 
-### 17. CausalAlign: Causal Alignment of Video Generation Models for Consistent Ego-Motion
+### 8. Regional Anchor Routing for Multi-Object Motion Transfer
 
 - 方向：底层视觉
-- 作者：Kai Zhu, Yintianrun Zhang, Shuwei Jiang, Ruolin Zuo, Yixin Chen, Duomin Wang, et al.
-- 日期：2026-10-21
+- 作者：Yuze Li, Fuchen Long, Xinlong Sun, Cheng Yan, Xinyu Zhang, Xi Chen
+- 日期：2026-10-29
 - 分类：cs.CV
 - 关键词：denoising
-- arXiv：2610.29915v1
+- arXiv：2610.39478v1
 
 摘要：
 
-Diffusion-based video generation models (VGMs) can produce visually plausible videos, yet their camera ego-motion often drifts over long horizons. Camera ego-motion determines how the viewpoint changes between frames and is essential for maintaining consistent geometry and trajectories. To address this problem, we propose CausalAlign, a causal alignment framework with two components. First, we diagnose how precise ego motion is represented, used, and retained within VGMs using linear probes and causal interventions...
+Compositional motion transfer requires a model to extract motions from multiple reference videos, and apply each motion to a user-specified object in one target scene. Existing methods normally struggle to reliably assign different reference motions to the correct target objects, thus a motion intended for one object may affect another. Meanwhile, some motion-specific tuning approaches are still facing another issue: they must run a new optimization whenever the reference video changes, making repeated transfers in...
 
-### 18. How Do DiTs Denoise? An Aggregator-Predictor View of Attention and MLPs
-
-- 方向：底层视觉
-- 作者：Gyeonghun Kang, William Xingxu Chen, Xiang Cheng
-- 日期：2026-10-21
-- 分类：cs.CV, stat.ML
-- 关键词：denoising
-- arXiv：2610.29854v1
-
-摘要：
-
-How do diffusion transformers (DiTs) represent image content and learn rules for reusing it to generalize? We develop an aggregator--predictor view of DiTs as input-adaptive local denoisers, in which context aggregation and patch prediction provide functional roles for interpreting attention and MLPs. We first establish that, for Gaussian Markov random field (GMRF) priors, the global Bayes denoiser can be approximated using only a subset of context patches, with error decaying exponentially in context radius. We fu...
-
-### 19. Efficient Generative Image Compression with Quantized Latents Refinement
+### 9. Calibrating Attention-Based Token Pruning for Efficient Multi-Image Synthesis in UMMs
 
 - 方向：底层视觉
-- 作者：Hao Cao, Yinhuan Huang, Wenqi Guo, Zhijin Qin, Jungong Han
-- 日期：2026-10-21
-- 分类：cs.CV
-- 关键词：image compression
-- arXiv：2610.29691v1
-
-摘要：
-
-Generative image compression (GIC) delivers strong perceptual quality at low bitrates. However, GIC methods with strong perceptual quality often rely on pretrained diffusion models with high latency, while recent lightweight GIC methods reduce latency but deliver lower perceptual quality. We observe that, for lightweight GIC methods at low bitrates, coarse deterministic quantization can collapse nearby encoder latents corresponding to different fine details to the same point, making these details difficult to recov...
-
-### 20. Spatially Gated Demographic Steering for Debiasing Multi-Person Text-to-Image Generation
-
-- 方向：底层视觉
-- 作者：Venkatesh Thirugnana Sambandham, Torsten Schon
-- 日期：2026-10-21
+- 作者：Zimeng Wu, Qijian Tian, Penghui Du, Changqian Yu, Jiaxin Chen, Yunhong Wang
+- 日期：2026-10-29
 - 分类：cs.CV
 - 关键词：denoising
-- arXiv：2610.29651v1
+- arXiv：2610.39467v1
 
 摘要：
 
-Text-to-Image models reproduce societal stereotypes, and existing mitigation applies one demographic correction to the whole scene. In multi-person scene generation this creates a trade-off: global steering improves aggregate balance only by homogenizing the people within an image. Steering-based methods like Embedding Arithmetic drive the intra-image diversity below the unsteered baseline. Text- and latent-projection approaches shift the aggregate skew with only marginal gains in intra-image diversity. We present...
+Unified Multimodal Models (UMMs) enable powerful multi-image synthesis but incur substantial computation from long visual contexts. While token pruning offers a direct route to accelerating inference, existing methods are primarily adapted from understanding tasks, suffering from insufficient reference image exploration, confused conditional guidance, and pooling-induced ambiguity that degrades generation quality. To address these issues, we propose CATP, the first training-free context-compression method tailored...
 
-### 21. Rethinking Underwater Image Enhancement: Learning through Text-Guided Degradation Curriculum
+### 10. Multi-level Constrained Learning for Underwater Image Enhancement
 
 - 方向：底层视觉
-- 作者：Hongri Tian, Wenxue Li, Tian Ye, Sixiang Chen, Zongxian Su, Lujia Wang, et al.
-- 日期：2026-10-21
+- 作者：Wangtao Bao, Liping Xie, Kanjian Zhang, Huimin Lu
+- 日期：2026-10-29
 - 分类：cs.CV
 - 关键词：image enhancement
-- arXiv：2610.29569v2
+- arXiv：2610.39183v1
 
 摘要：
 
-Existing paired clean-degraded datasets have advanced learning-based underwater image enhancement, but they remain either limited in scale or difficult to acquire, and still fail to adequately cover the diverse degradations encountered in real-world underwater environments. Such scarce and insufficient data ultimately restrict the generalization of underwater image enhancement models, highlighting the need for realistic and controllable degradation modeling to better capture real underwater conditions and improve e...
+Underwater image enhancement aims to correct color and recover detail degraded by wavelength-dependent attenuation, scattering, and noise. Paired-reference supervision constrains output similarity, but does not by itself specify the color mapping, the strength of local detail corrections, or consistency with the degraded observation. We propose MCL-UIE, a paired-supervised framework that addresses these requirements by constraining restoration operations and the training objective. Monotonic Chromatic Transform (MC...
 
-### 22. Sparsity Should Be ALLOTted by Output: Training-Free Allocation of Block-Sparse Attention for Video Diffusion Transformers
+### 11. CLaW: Codec-Guided Adaptive Latent Watermarking for Traceable Diffusion Image Generation
 
 - 方向：底层视觉
-- 作者：Tianze Xia, Xiaoling Zhou, Ruya Lan, Yiqiao Liao, Chengru Song, Shiming Xiang
-- 日期：2026-10-21
+- 作者：Huangchao Song, Lingyun Yu, Cong Li, Peiqi Jiang, Mingqi Fang, Hongtao Xie
+- 日期：2026-10-29
+- 分类：cs.CV, cs.CR
+- 关键词：denoising
+- arXiv：2610.39160v1
+
+摘要：
+
+With the rapid advancement of text-to-image diffusion models, increasingly realistic AI-generated content has raised serious concerns about misuse and copyright infringement. Digital watermarking offers a promising solution by enabling user-level traceability, yet existing methods remain difficult to deploy at scale, hindered by costly model retraining or detection, poor effectiveness-fidelity trade-offs, and limited robustness to image transformations. To address these challenges, we propose CLaW (Codec-guided Lat...
+
+### 12. AlbumVSR: Identity-Preserving Face Video Super-Resolution from a Personal Photo Album
+
+- 方向：视频处理
+- 作者：Nianyao Du, Xijun Wang, Stanley H. Chan
+- 日期：2026-10-28
+- 分类：cs.CV, eess.IV
+- 关键词：video super-resolution
+- arXiv：2610.39001v1
+
+摘要：
+
+Severe blur, downsampling, noise, and compression can erase the identity cues needed to faithfully restore a person's face. We therefore use photographs of the same person as an external source of identity. AlbumVSR conditions a frozen, one-step streaming diffusion transformer on a personal album. We use four MagFace/CLIP set tokens to encode the album, and 64 texture tokens which come from a fused UV atlas rendered at the current window's estimated face pose. These tokens are appended to the transformer's cached c...
+
+### 13. Residual Motion Splatting for Continuous Space-Time Video Super-Resolution
+
+- 方向：视频处理
+- 作者：Vincent Herfeld, Eva Coupet{é}, Julien Mairal, Jean Ponce
+- 日期：2026-10-28
+- 分类：cs.CV
+- 关键词：video super-resolution
+- arXiv：2610.38499v1
+
+摘要：
+
+Continuous space-time video super-resolution produces a high-resolution, highframe-rate video from a low-resolution, low-frame-rate one at arbitrary spatial scales and temporal instants. Classical spatial multi-frame super-resolution has shown that detail beyond a single frame's sampling limit can be recovered by aligning complementary observations with sub-pixel precision and accumulating them on a finer grid. Existing learning-based methods largely depart from this principle: some align and fuse frames only at lo...
+
+### 14. Hierarchical Diffusion for Camera-controlled Autoregressive Video Generation
+
+- 方向：底层视觉
+- 作者：Kaihua Chen, Yiming Gong, Deva Ramanan, Tarasha Khurana
+- 日期：2026-10-27
 - 分类：cs.CV
 - 关键词：denoising
-- arXiv：2610.29441v1
+- arXiv：2610.37983v1
 
 摘要：
 
-Full 3D attention is costly in video Diffusion Transformers. Block-sparse attention reduces this cost by computing only selected attention blocks. However, existing methods either overlook the potential to optimize sparsity allocation or rely on heuristic rules or local metrics to guide it. In this work, we observe that sparsifying attention in different layers and at different denoising steps affects final-video fidelity to substantially different degrees. Yet the identities of the most sensitive layer-step pairs...
+We address the task of long-video, camera-controlled generation from a single image. The dominant autoregressive paradigm suffers from two key limitations: (1) error accumulation over time, as distant frames are conditioned on previously generated outputs rather than ground truth, leading to drift; and (2) ambiguity in how to incorporate camera control. Standard solutions to both--such as self-forcing and conditioning on explicit 6-DOF poses--either incur significant computational overhead or produce drifting scene...
 
-### 23. Seeing through Denoising: Frequency-guided One-step Denoising for Infrared Small Target Detection
+### 15. The Noise Plane: A Diffusion Bridge Across Exponent and Dispersion
 
 - 方向：底层视觉
-- 作者：Xuelin Qian, Zixuan Wang, Chang Xu, Dingwen Zhang, Junwei Han
-- 日期：2026-10-21
+- 作者：Xuran Hu, Yuru Jia, Tengxi Wang, Miloš Daković, Ljubiša Stanković, Wufan Zhao
+- 日期：2026-10-27
 - 分类：cs.CV
 - 关键词：denoising
-- arXiv：2610.29361v1
+- arXiv：2610.37576v1
 
 摘要：
 
-Infrared small target detection (IRSTD) is a challenging task due to the extremely small size of targets, low signal-to-noise ratios, and heavy background clutter in infrared imagery. While the progress of deep learning has advanced this field, existing methods primarily adopt discriminative paradigms that directly map images to target masks, overlooking the potential of generative modeling. In this paper, we propose DiffIRSTD, a novel generative framework that reformulates infrared small target detection as a back...
+Diffusion-based denoising commonly uses Gaussian perturbations, whereas sensor noise follows diverse signal-dependent statistical laws. In this paper, we propose $p$-Bridge, a unified measurement-indexed diffusion framework for Tweedie noise. The noise exponent $p$ describes the variance--intensity relation, while accumulated measurement $ν$ controls the noise level. Together, they define a noise plane that includes Gaussian, Poisson, and Gamma models. The stochastic bridge connects measurement distributions throug...
 
-### 24. OpenMAP-HIE: Pathology Informed Score-based Diffusion Model for Unsupervised Neonatal Hypoxic-Ischemic Encephalopathy Lesion Segmentation
+### 16. Taming Noise Initialization for Zero-shot Video Restoration with Image Diffusion Priors
+
+- 方向：视频处理
+- 作者：Chong Wang, Zixuan Fu, Hao Cheng, Siyuan Yang, Alex C. Kot, Bihan Wen
+- 日期：2026-10-27
+- 分类：cs.CV
+- 关键词：video restoration
+- arXiv：2610.37290v1
+
+摘要：
+
+Recent advances in diffusion models have achieved remarkable success in restoring high-quality images in a zero-shot manner. Unfortunately, extending this success to video restoration is challenging due to the substantial computational resources required to pre-train video diffusion models. A rising trend seeks to address video restoration by utilizing a pre-trained image diffusion model, initiating restoration from either frame-wise independent or identical Gaussian noise. Yet, these approaches often fall short, a...
+
+### 17. VGIQA: Fine-Grained Image Quality Assessment with Visual Grounding Rewards
 
 - 方向：底层视觉
-- 作者：Pengyu Kan, Craig Jones, Kenichi Oishi
-- 日期：2026-10-21
+- 作者：Weichang Wang, Liyu Chen, Shuyue Guan, Jie Hu, Fei Gao, Wei Li, et al.
+- 日期：2026-10-27
+- 分类：cs.CV
+- 关键词：image quality assessment
+- arXiv：2610.37186v1
+
+摘要：
+
+Image quality assessment (IQA) aims to evaluate the perceptual visual quality of images. Recently, the rapid development of Multi-modal Large Language Models (MLLMs) has significantly advanced the IQA field. By integrating chain-of-thought (CoT) reasoning and reinforcement learning (RL), these models can generate more accurate and interpretable results while relying on less training data. However, existing MLLM-based methods are predominantly constrained to holistic, image-level evaluations and lack the capability...
+
+### 18. A First-Step Bias Restores Lost Diversity in Diffusion Model Distillation
+
+- 方向：底层视觉
+- 作者：Wenwu Tang, Dong Wang, Yun Cheng, Olga Saukh
+- 日期：2026-10-27
 - 分类：cs.CV, cs.AI
 - 关键词：denoising
-- arXiv：2610.29322v2
+- arXiv：2610.37110v1
 
 摘要：
 
-Accurate localization of neonatal hypoxic--ischemic encephalopathy (HIE) lesions on apparent diffusion coefficient (ADC) images is clinically important but is limited by scarce expert annotations and substantial variation in lesion appearance. We propose OpenMAP-HIE, a pathology-informed score-based diffusion model for unsupervised HIE lesion localization without voxel-wise lesion supervision. A denoising diffusion model learns the healthy neonatal ADC distribution, while a ControlNet-based conditional branch prese...
+Distribution-matching distillation enables high-quality image generation in only a few denoising steps. However, distilled student models often map different initial noise samples to similar outputs under the same prompt. To locate where diversity is lost, we compare the teacher and student along the sampling trajectory. The largest measured reduction in the response to different initial noises occurs during the first, high-noise step. When we replace the first step with the teacher's corresponding trajectory and l...
 
-### 25. OccJEPA: Occlusion as Masking for Amodal Video Segmentation
-
-- 方向：底层视觉
-- 作者：Genpei Zhang
-- 日期：2026-10-21
-- 分类：cs.CV, cs.LG
-- 关键词：denoising
-- arXiv：2610.29061v1
-
-摘要：
-
-Amodal video segmentation asks for the complete mask of an object in every frame, including the parts hidden behind other objects. The best current methods generate these masks with fine-tuned video diffusion models, which need many denoising steps and an extra depth network, and give a different answer for every sample. Self-supervised video world models of the JEPA family are trained on a closely related task: predicting the representation of masked space-time regions from the visible ones. We therefore treat occ...
-
-### 26. Policy-Mask: Budget-Aware Adaptation of Diffusion Features to Discriminative Tasks
+### 19. TriDifNet: A Unified Three-Task Diffusion Network for End-to-End RGB-T Perception
 
 - 方向：底层视觉
-- 作者：Ivan Listopadov, Maksim Nakhodnov, Aibek Alanov
-- 日期：2026-10-20
+- 作者：Qianchao He, Jing Liu, Yunhao Li, Xiaoqing Tian
+- 日期：2026-10-27
 - 分类：cs.CV
 - 关键词：denoising
-- arXiv：2610.28889v1
+- arXiv：2610.37097v1
 
 摘要：
 
-Selecting intermediate features from a frozen diffusion model for discriminative tasks is non-trivial because the useful signal is distributed across the denoising trajectory, network depth, and channels. In practice, this requires choosing a timestep, a block, and a channel subset. Existing methods either fix these choices by hand or optimize only a few extraction hyperparameters, most often the timestep, then reuse the same rule across inputs and budgets. We introduce Policy-Mask, a budget-conditioned policy trai...
+Infrared--visible (IR--VIS) multi-modal perception supports robust scene understanding under challenging illumination. Infrared and visible images are often misaligned due to platform motion, viewpoint changes, and modality-dependent distortions, causing registration errors to propagate into subsequent fusion and detection stages. We propose TriDifNet, a unified three-task diffusion network for end-to-end RGB-T perception. To the best of our knowledge, TriDifNet is the first diffusion-based network that jointly opt...
 
-### 27. JUICE: Unified Multimodal Modeling in Pretrained Representation Spaces
+### 20. Explicit Regional Representations For Video Quality Assessment
 
-- 方向：底层视觉
-- 作者：Jiahan Li, Huangyuan Su, Shengbang Tong, Shusheng Yang, Ruihan Guo, Suozhi Huang, et al.
-- 日期：2026-10-20
+- 方向：视频处理
+- 作者：Fuyi Yang, Lei Yang, Andrew Liu, Chenyu Wei, Xiaoyi Guo, Ming Kai Hsu
+- 日期：2026-10-27
 - 分类：cs.CV
-- 关键词：denoising
-- arXiv：2610.28801v1
+- 关键词：video quality assessment
+- arXiv：2610.36978v1
 
 摘要：
 
-Most unified multimodal models treat images and text asymmetrically: a pretrained language model generates text, an attached diffusion head generates images, and outputs that contain both are produced in a fixed order, so the first output cannot adapt to the second. We ask whether both modalities can instead be generated by one process that is trained on them jointly from scratch. Pretrained encoder spaces hold both modalities in one continuous form and carry knowledge learned at scale, and recent work finds them e...
+End-to-end video quality assessment (VQA) methods leave the regional evidence underlying their predictions largely implicit. We introduce an explicit pixel-level regional representation for VQA, instantiated as a Quality-Relevance Heatmap (QRH) that combines localized degradation evidence with perceptual priors under vision-language model guidance, without requiring pixel-level annotations. We apply QRH to existing VQA models through two deterministic fragment-sampling strategies: distribution-preserving sampling a...
 
-### 28. SolarRenderer: Few-Step Generative Reference Rendering
+### 21. Look Only When Needed: Certificate-Guided Visual Routing for Efficient Diffusion VLMs
 
 - 方向：底层视觉
-- 作者：Guian Fang, Shengju Qian, Dongyue Lu, Junchao Huang, Lutao Jiang, Xin Wang, et al.
-- 日期：2026-10-20
+- 作者：Donghyeon Cho, Joowon Kim, Seungho Shin, Eunho Yang
+- 日期：2026-10-27
+- 分类：cs.CV, cs.AI, cs.LG
+- 关键词：denoising
+- arXiv：2610.36671v1
+
+摘要：
+
+Diffusion vision-language models (DVLMs) process their entire input at every denoising step. Since visual tokens make up 89-97% of this input on the benchmarks we study, most of the decoding computation is spent repeatedly processing the same image. Visual token pruning methods partially relieve this burden by removing part of the visual tokens, but they lose the removed information and still process the remaining image at every step. To measure how often the image is actually needed, we compare LLaDA-V's predictio...
+
+### 22. Spatial-Frequency Learning for Scanning Transmission Electron Microscopy Image Enhancement
+
+- 方向：底层视觉
+- 作者：Hesong Li, Ying Fu, Ziqi Wu, Ruiwen Shao, Tao Zhang
+- 日期：2026-10-27
 - 分类：cs.CV
-- 关键词：denoising
-- arXiv：2610.28630v1
+- 关键词：image enhancement
+- arXiv：2610.36487v1
 
 摘要：
 
-Game engines and coding agents can specify the layout, motion, and camera of a scene, yet turning such coarse structure into realistic video requires a renderer that follows the structure and completes the appearance it leaves open. Existing renderers are tied to the representation of one engine, need tens of denoising steps or a costly distillation of their own, and learn from conditions that are not aligned with their target videos. We present SolarRenderer, a structure-conditioned video renderer that adapts a fr...
+Scanning Transmission Electron Microscopy (STEM) enables the observation of atomic arrangements at sub-angstrom resolution and plays a key role in the discovery and characterization of advanced materials. Raw STEM images are often noisy and blurred due to multiple degradations. Although recent deep learning methods improve STEM images, their performance remains limited under severe degradations. In this work, we propose a spatial-frequency learning framework for STEM image enhancement. Specifically, we design a spa...
 
-### 29. WorldSR: Harnessing World Knowledge Search for Grounded Image Super-Resolution
+### 23. OSWAM: An Effective World Action Model with One-Step Action Generation
 
 - 方向：底层视觉
-- 作者：Junyuan Deng, Xinyi Wu, Zhenyao Wu, Song Wang, Yu Wang, Congchao Zhu
-- 日期：2026-10-20
-- 分类：cs.CV, cs.AI
+- 作者：Guowen Zhang, Liyi Chen, Xu Hu, Pengfei Wang, Jingfan Chen, Chenhang He, et al.
+- 日期：2026-10-26
+- 分类：cs.CV, cs.RO
+- 关键词：denoising
+- arXiv：2610.35850v1
+
+摘要：
+
+Direct-policy World Action Models (WAM) have demonstrated the benefits of decoupling action generation from explicit future visual prediction for efficient inference in autonomous driving and embodied control. However, they still require tens of denoising steps to achieve competitive action quality, incurring substantial latency and hindering real-time deployment. Simply reducing the number of denoising steps will collapse the nonlinear multi-step denoising trajectory into coarse updates, substantially degrading ac...
+
+### 24. HiFiPix: Bringing High-Fidelity Real-World Super-Resolution Back to Pixel Space
+
+- 方向：底层视觉
+- 作者：Wenjie Li, Du Chen, Hui Wang, Linlong Fan, Youwei Lv, Zeyi Chen, et al.
+- 日期：2026-10-26
+- 分类：cs.CV
 - 关键词：image super-resolution
-- arXiv：2610.28423v1
+- arXiv：2610.35515v1
 
 摘要：
 
-Generative-prior-based super-resolution (SR) methods leverage implicit knowledge learned from large-scale models to enhance low-resolution inputs. However, such priors are inherently stochastic and optimized for diverse generation, conflicting with the deterministic, high-fidelity reconstruction required for SR. It is also tied to the base model, costly to update, and prone to hallucinations as real-world data evolves. To address these limitations, we introduce WorldSR, a novel framework that augments SR with expli...
+Diffusion-based real-world image super-resolution suffers from limited reconstruction fidelity due to information loss in VAE-based latent representations. Recently, pixel-space diffusion models offer a promising high-faithfulness alternative by avoiding latent compression, but adapting them to Real-ISR remains challenging due to inherent patch boundary artifacts and degraded generative capability. To address the issues and maximize the potential of pretrained pixel-space diffusion models, we propose HiFiPix, a pix...
 
-### 30. Unified RAW Image Exposure Correction and Restoration via Linear Illumination and Frequency-Adaptive Enhancement
+### 25. Shared-Factor-Conditioned Diffusion for Low-Rank Tensor Recovery
 
 - 方向：底层视觉
-- 作者：Yingkai Zhang, Yunhao Zou, Ying Fu
-- 日期：2026-10-20
-- 分类：cs.CV
+- 作者：Zhengyun Cheng, Guanwen Zhang, Wei Zhou
+- 日期：2026-10-26
+- 分类：cs.CV, cs.AI
 - 关键词：denoising
-- arXiv：2610.28191v1
+- arXiv：2610.35368v1
 
 摘要：
 
-Incorrect exposure degrades both image brightness and recoverable scene detail. Existing sRGB-based correction methods are limited by the non-linear image signal processing pipeline, whereas RAW-based methods are usually developed for a single degradation type, such as low-light denoising or high-light recovery. In this paper, we focus on joint exposure correction and restoration directly in the RAW domain and propose a unified RAW Image Exposure Correction and Restoration (RIECR) framework for both under- and over...
+Tensor recovery spans heterogeneous data structures and observation processes, calling for a representation that can adapt across modalities and tasks. We propose DiffTR, an unsupervised framework that unifies tensor completion, denoising, and hyperspectral super-resolution through coordinate-conditioned diffusion. Shared factors indexed by tensor coordinates condition a compact score network, and score matching jointly learns the factors and an implicit tensor representation from the available observations. Scalar...
+
+### 26. Low-rank MERA Decomposition of 3D OCT Image Volume for Compression, Denoising, Feature Extraction and Diagnosis of Retinal Diseases
+
+- 方向：底层视觉
+- 作者：Ivica Kopriva, Fei Shi, Marija Štanfel, Qin Peng, Jianhao Bao, Gaowei Li, et al.
+- 日期：2026-10-26
+- 分类：cs.CV
+- 关键词：denoising
+- arXiv：2610.35271v1
+
+摘要：
+
+Optical coherence tomography (OCT) is a non-invasive imaging modality used for visualization of retinal tissue. However, OCT volumes are affected by speckle noise, which degrades image contrast and obscures fine structural details. Furthermore, modern clinical practice requires large field-of-view, high-resolution OCT volumes, whose storage and transmission are demanding for archiving and teleophthalmology applications. To address aforementioned challenges, we propose a low-rank multi-scale entanglement renormaliza...
+
+### 27. Learning Dual-Camera Smooth Zoom via Decoupled Geometric-Photometric Data Synthesis
+
+- 方向：视频处理
+- 作者：Junjie Fan, Zhilu Zhang, Renlong Wu, Dazhi Zhang, Wangmeng Zuo
+- 日期：2026-10-26
+- 分类：cs.CV
+- 关键词：frame interpolation
+- arXiv：2610.34854v1
+
+摘要：
+
+When zooming between dual cameras on smartphones, prominent discontinuities in both geometric perspective and color rendition inevitably degrade the visual experience of users. To address this issue, we introduce the dual-camera smooth zoom (DCSZ) task, aiming to synthesize continuous intermediate frames for fluid zooming. However, directly applying existing video frame interpolation (VFI) models to this task is severely hindered by substantial domain gaps and the practical intractability of capturing real-world co...
+
+### 28. PosePlaner: Denoising Any Feed-Forward Pose Predictor from Pairwise Planar Geometry
+
+- 方向：底层视觉
+- 作者：Yihang Chen, Bin Tan, Yujun Shen, Yinghao Xu, Nan Xue
+- 日期：2026-10-26
+- 分类：cs.CV
+- 关键词：denoising
+- arXiv：2610.34845v1
+
+摘要：
+
+Recent multi-view Transformers (e.g., DUSt3R and VGGT) have advanced 3D reconstruction by scaling training data and model capacity from two views to many views and long sequences, subsuming the classical SfM/SLAM pipeline of feature extraction, matching, and pose estimation in a single feed-forward pass. Yet this subsumption hides the interfaces between pipeline stages---correspondences, geometry, and pose are entangled in a single forward pass, leaving supervised fine-tuning as the major path to improvement and of...
+
+### 29. ToDoPro: Faster and Better Reference-Based Generation: Early Token Reduction via Downsampled Self-Probing
+
+- 方向：底层视觉
+- 作者：Caiyi Sun, Yujing Sun, Siu-Ming Yiu
+- 日期：2026-10-26
+- 分类：cs.CV, cs.AI
+- 关键词：denoising
+- arXiv：2610.34782v1
+
+摘要：
+
+Recent generic reference-based image generation models natively support multiple conditions by concatenating all reference image and text tokens into a joint sequence processed by a single Diffusion Transformer (DiT). However, this versatile paradigm comes at an efficiency cost: accommodating multiple references leads to a token explosion, incurring massive $\mathcal{O}(N^2)$ computational complexity. Most acceleration methods operate inside the DiT, showing limited capability in reducing spatial redundancy and fai...
+
+### 30. EditDistill: Is It Possible to Guide Video Editing with Image Editing?
+
+- 方向：底层视觉
+- 作者：Guojun Lei, Hong Li, Hongbing Yang, Lixue Gong, Chi Wang, Zheng Dong
+- 日期：2026-10-25
+- 分类：cs.CV
+- 关键词：denoising
+- arXiv：2610.34303v1
+
+摘要：
+
+Recent advances in image editing have enabled fine-grained and highly controllable visual modifications. However, achieving similar levels of controllability in video editing remains an open challenge, particularly for precise local edits, dynamic temporal effects, and consistent lighting across frames.In this paper, we propose EditDistill, a framework that distills image-level visual transformations from edits to guide video editing.Specifically, given a source video and an edit prompt, we first generate an edited...
 
 ## 关键词配置
 
